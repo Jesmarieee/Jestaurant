@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>about us</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/soup.png">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+
+</head>
+<body>
+
+  <!-- Sub Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-sm-8">
+            <div class="left-content">
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div class="right-icons">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Jestaurant
+                        </a>
+    <!-- ***** Logo End ***** -->
+
+  <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="Porfolio1.html" >Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="has-sub">
+                                <a href="javascript:void(0)">Products</a>
+                                <ul class="sub-menu">
+                                    <li><a href="products.html"><img src="assets/images/alien.png" alt="alien" style="width:55px;" ></a></li>
+                                    <li><a href="products.html"><img src="assets/images/heart.png" alt="heart" style="width:55px;" ></a></li>
+                                    <li><a href="products.html">all</a></li>
+                                </ul>
+                            <li><a href="partners.html">Partners</a></li>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li> 
+                            <li><a><img src="assets/images/soup.png" alt="soup" style="width:40px;" ></a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+     <!-- ***** Header Area End ***** -->
+
+     <!-- ***** Main Banner Area Start ***** -->
+       <section class="section main-banner" id="top" data-section="section1">
+           <video autoplay muted loop id="bg-video">
+               <source src="assets/images/about-us-vid.mov" type="video/mp4" />
+           </video>
+
+           <div class="video-overlay header-text">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-lg-12">
+                     <div class="caption">
+                   <h2>Know more about thrifting and about our shop</h2>
+                   <p>Our shop strives to make thrifting cheap and fun again ヾ(＠⌒ー⌒＠)ノ </p>
+                   </div>
+                 </div>
+               </div>
+           </div>
+       </section>
+        <!-- ***** Main Banner Area End ***** -->
+
+  <section class="meetings-page" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="meeting-single-item">
+                <div class="thumb">
+                  <a"><img src="assets/images/secondchances.jpg" alt=""></a>
+                </div>
+
+              <!-- thrifting meaning !-->
+                <div class="down-content">
+                  <a><h4>So where did thrifting, or Ukay-Ukay in our language, come from? </h4></a>
+                  <p>"The concept of thrift dates back to the early 19th century when charities and religious organizations would collect second-hand clothing and sell them to raise funds for their causes. However, it wasn't until the Great Depression of the 1930s that thrift shopping gained widespread popularity." - (Goodfair,2019)</p>
+                  <br>
+
+                  <p>"Ukay-ukay is a term used both for the act of shopping by digging up piles of used or pre-loved clothes until one makes a good find. It also refers to retailers of secondhand clothes and accessories in the Philippines." - (Biana,2020)</p>
+
+              <!-- more info abt thrifting  !-->
+                  <p class="description">
+                   As of my knowledge as of now there are alot of discourse about thrifting because it is becoming more unethical: from rich kids buying bulk of second-hand clothes then selling it for a much more higher price point thus making it harder for much poorer folks to have access to cheaper alternative of clothing rather than buying fast fashion. Belle.Mchelle(2023) stated in her video "As thrifting became more popular it became less about a means to survival and more so about changing your style or following trends for cheap. Unfortunately because thrifting has been propped up as an eco-friendly way of shopping it has removed all possible forms of guilt from overconsumption surrounding thrifting". Because of this Trends tend to go faster rather than going out in a timely fashion, thus resulting in an overconsumption of textile this creates more problems because many people especially the ones that could afford buying an influx of clothing might declutter the out of fashion items. The items decluttered can go into 2 places: back into the thrift shop and if it doesn’t sell it’ll be thrown out thus contributing more into the ever growing landfill in third world countries or they might hand it down to a family member if they don’t like the item given to them it, the item might go through the first consequence or not even given that chance and get thrown out directly. 
+                 </p>
+
+                   <p>
+                   To every Yin there is a Yang, I don’t wanna get all gloomy by just getting into the bad side of thrifting of course it has perks to it too like getting to express yourself freely especially folks who hasn’t not been able to do either by lack of funds or just lack pazzazz from the fast fashion clothing in the readily available in the mall’s. It can also provide good quality vintage items for less and much more.
+                 </p>
+
+                  <br>
+
+                  <p>
+                   It might sound like I’m scaring you into not buying my merchandise but it is better to be aware of the impact you’re having on the environment. Knowing more about thrifting makes me wanna strive for more ethical consuption of it, so in making this store I strive to not be like other greedy merchants :3.
+                  </p>
+
+                    <div class="col-lg-12">
+                      <div class="share">
+                        <h5>Reference List:</h5>
+                        <p>
+
+                         Goodfair.(2023,March 1).The history of thrift shopping: Exploring the origins and evolution of the thrift industry.
+
+                         <br>
+
+                         Biana, H.T.(2020).The Philippine Ukay-Ukay Culture as Sustainable
+                         Fashion.DLSU Business & Economics Review 30(1) 2020, p. 154-164
+
+                         <br>
+
+                         Belle.Mchelle.(2023, October 18). Thrifting Will Not Save Us | Our Problem with Overconsumption [Video]. Youtube. https://www.youtube.com/watch?v=YJIAf5zp4is
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+    </div>
+  </section>
+
+ <p> about us test </p>
+</body>
+</html>
