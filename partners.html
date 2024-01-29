@@ -11,15 +11,28 @@
     <link rel="icon" type="image/x-icon" href="assets/images/soup.png">
 
   <style>
-    table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    }
-    table{
-      width: 100%;
-      align-content:center;
-    }
+  .parent {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      padding: 10px;
+      width: 90vw;
+      margin-top: 50px;
+      border: 1px transparent solid;
+      border-radius: 10px;
+  }
 
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+   </style> 
    </style> 
 
   <!-- Bootstrap core CSS -->
@@ -127,7 +140,6 @@
                         <ul class="nav">
                             <li><a href="index.html" >Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li class="has-sub">
                             <li><a href="products.html">Products</a></li>
                             <li><a href="partners.html">Partners</a></li>
                             </li>
@@ -166,48 +178,47 @@
           
           <!-- ***** Main Banner Area End ***** -->
 
-          <section class="meetings-page" id="meetings">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
+                <!-- Online Shops-->
+                <div class="parent row" style="margin-top: 20px; margin-bottom: 50px;">
                   <div class="row">
-                    <div class="col-lg-12">
-                      <div class="meeting-single-item">
-                        <div class="thumb">
-                          <a"><img src="assets/images/shops.png" alt=""></a>
-                        </div>
-              <!-- irl shops -->
+                  <a><h3>Online Shops</h3></a>
+                  <br>
+                  <p>These shops consist of shopee sellers to shops from social media ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</p>
+                  <br>
+                <!--Insta shops-->
+                  <h4>Instagram Shops</h>
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://www.instagram.com/the.vintagenova_styless?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h5>the.vintagenova_styless</h5></a>
+  
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://www.instagram.com/sanji.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h5>sanji.co</h5></a>
 
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://www.instagram.com/flairblanch?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h5>flairblanch</h5></a>
 
-                <div class="down-content">
-                  <a><h4>Thrift & Consignment Stores</h4></a>
-                  <table>
-                    <tr>
-                        <th>Octavian RTW Surplus</th>
-                        <td>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15434.103601633851!2d121.12287514955909!3d14.739375622215166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397bb17a7344a45%3A0x4149ea9d00a35004!2sMontalban%20Town%20Center!5e0!3m2!1sen!2sph!4v1705275229761!5m2!1sen!2sph" width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </td>
-                    </tr>
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://www.instagram.com/hayarimarket?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h5>hayarimarket</h5></a>
+                    <br>
 
-                    <tr>
-                        <th>Desabel RTW Surplus Center</th>
-                        <td>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.6198977709!2d121.04864057409752!3d14.620715985868042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7af21d393db%3A0x6920e1c01310ee7!2sDesabel%20RTW%20Surplus%20Center!5e0!3m2!1sen!2sph!4v1705275664985!5m2!1sen!2sph" width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </td>
-                    </tr>
+                <!--Shopee Sellers-->
+                    <h4>Shopee Accounts</h4>
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://shopee.ph/mightysavershop_11?entryPoint=OrderDetail"><h5>Mighty Saver Shop</h5></a>
+  
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://shopee.ph/deechoice01?entryPoint=OrderDetail"><h5>deechoice01</h5></a>
 
-                    <tr>
-                        <th>Clip & Hanger</th>
-                        <td>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.613706962099!2d121.04943487409734!3d14.621068185867703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b74a4fb63b15%3A0x867e894c673ca25e!2sClip%20%26%20Hanger!5e0!3m2!1sen!2sph!4v1705275745750!5m2!1sen!2sph" width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </td>
-                    </tr>
-                  </table>
-              
-    <div class="footer">
-      <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
-    </div>
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://shopee.ph/kako11_?entryPoint=OrderDetail"><h5>Kako Mall</h5></a>
+
+                      <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://shopee.ph/atticusph?entryPoint=OrderDetail"><h5>Atticus PH</h5></a>
+
+                     <div class="col-lg-6 col-sm-12"></div>
+                          <a href="https://shopee.ph/zip_n_button_shop?entryPoint=OrderDetail"><h5>Zip N' Button Shop</h5></a>
+                  </div>
+                  </div>
+
   </section>
 
 </body>
